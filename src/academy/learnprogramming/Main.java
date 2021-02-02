@@ -16,10 +16,27 @@ public class Main {
         System.out.println("Double Min Value = " + myMinDoubleValue);
         System.out.println("Double Max Value = " + myMaxDoubleValue);
 
-        int myIntValue = 5;
-        float myFloutValue = (float) 5.25;
+        int myIntValue = 5 / 3;
+        float myFloutValue = 5f / 3f;
         // OR
-        float mySecondFloutValue = 5.25f;
-        double myDoubleValue = 5.25d;
+        float mySecondFloutValue = (float) 5.25;
+        double myDoubleValue = 5d / 3d;
+
+        System.out.println("MyIntValue = " + myIntValue);
+        System.out.println("MyFloatValue = " + myFloutValue);
+        System.out.println("MyDoubleValue = " + myDoubleValue);
+
+
+
+        // Double Challenge
+        double oneLbsinKilos = 0.45359237d;
+        double lbsToBeConverted = 87.5d;
+        double lbsToKilo = lbsToBeConverted * oneLbsinKilos;
+
+        System.out.println(lbsToBeConverted + " lbs equals " + lbsToKilo + " kilograms");
+
+        double pi = 3.1415927d;
+        double anotherNumber = 3_000_000.4_567_890d;
+        System.out.println(anotherNumber);
     }
 }
